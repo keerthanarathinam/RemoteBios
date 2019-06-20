@@ -1,0 +1,46 @@
+First create one directory
+
+1) root@keerthana:/home/keerthana/Deskto# mkdir Git_Demo
+
+2) root@keerthana:/home/keerthana/Desktop/Git_Demo# git init
+
+Initialized empty Git repository in /home/keerthana/Desktop/Git_Demo/.git/
+
+3) root@keerthana:/home/keerthana/Desktop/Git_Demo# git remote add origin "https://github.com/keerthanarathinam/RemoteBios.git"
+
+4) root@keerthana:/home/keerthana/Desktop/Git_Demo# git pull origin master
+
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From https://github.com/keerthanarathinam/RemoteBios
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+
+5) root@keerthana:/home/keerthana/Desktop/Git_Demo# git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Test
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+6) root@keerthana:/home/keerthana/Desktop/Git_Demo# git add Test
+
+7) root@keerthana:/home/keerthana/Desktop/Git_Demo# git add README.md 
+
+8) root@keerthana:/home/keerthana/Desktop/Git_Demo# git config --global user.email "keerthanarathinam15@gmail.com"
+
+9) root@keerthana:/home/keerthana/Desktop/Git_Demo# git config --global user.name "keerthanarathinam"
+
+10) root@keerthana:/home/keerthana/Desktop/Git_Demo# git commit -m "adding first commit in local repo"
+
